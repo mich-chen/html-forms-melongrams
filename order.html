@@ -30,29 +30,47 @@
                 </tr>
             </table>
 
-        <h2>Order Form</h2>
-            <form id="order form">
-                <label>Your name</label>
-                <input type="text" name="name">
+        <h2 id="full order form">Order Form</h2>
+            <form id="order name and recipient">
+                <label><strong>Your name</strong></label>
+                    <input type="text" name="name">
 
-                <label>Who are we sending this to?</label>
-                <input type="text" name="recipient">
+                <label><strong>Who are we sending this to?</strong></label>
+                    <input type="text" name="recipient">
+            </form>
 
-                Choose a melon
-
+            <form id="melon selection">
+                <label><strong>Choose a melon</strong></label>
+                <br>
                 <select name="melon">
                     <option value="watermelon">Watermelon</option>
                     <option value="cateloupe">Canteloupe</option>
                     <option value="honeydew">Honeydew</option>
                 </select>
+            </form>
 
-When should we deliver?
-Morning
-Evening
-Any time
+            <form id="delivery">
+                <label><strong>When should we deliver?</strong></label>
+                <br>
+                <input type="radio" name="time" value="am">Morning
+                <input type="radio" name="time" value="pm">Evening
+                <input type="radio" name="time" value="any">Any time
+            </form>
 
-Enter your message:
+            <form id="personal message">
+                <label><strong>Enter your message:</strong></label>
+                <br>
+                <textarea name="message"></textarea>
+            </form>
 
-Subscribe to our newsletter
-Yes
+            <form id="subscription">
+                <label><strong>Subscribe to our newsletter</strong></label>
+                <input type="checkbox" name="subscribe" value="yes">
+                <label>yes</label>
+            </form>
+
+            <form id="submission">
+                <input type="submit">
+            </form>
+
 </html>
